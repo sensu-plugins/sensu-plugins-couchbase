@@ -1,18 +1,14 @@
 ## Sensu-Plugins-disk-checks
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-couchbase.svg?branch=master)][1]
-[![Gem Version](https://badge.fury.io/rb/sensu-plugins-couchbase.svg)][2]
-[![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-couchbase/badges/gpa.svg)][3]
-[![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-couchbase/badges/coverage.svg)][4]
-[![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-couchbase.svg)][5]
-
+[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-couchbase.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-conntrack)
+[![Gem Version](https://badge.fury.io/rb/sensu-plugins-conntrack.svg)](http://badge.fury.io/rb/sensu-plugins-conntrack)
+[![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-conntrack/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-conntrack)
+[![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-conntrack/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-conntrack)
+[![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-conntrack.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-conntrack)
 ## Functionality
 
 ## Files
- *
- *
- *
- *
+ * bin/check-couchbase-bucket-quota
 
 ## Usage
 
