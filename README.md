@@ -1,4 +1,4 @@
-## Sensu-Plugins-disk-checks
+## Sensu-Plugins-couchbase
 
 [![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-couchbase.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-conntrack)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-conntrack.svg)](http://badge.fury.io/rb/sensu-plugins-conntrack)
