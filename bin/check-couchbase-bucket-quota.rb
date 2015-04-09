@@ -33,6 +33,9 @@ require 'sensu-plugin/check/cli'
 require 'rest_client'
 require 'json'
 
+#
+# Check Couchbase
+#
 class CheckCouchbase < Sensu::Plugin::Check::CLI
   option :user,
          description: 'Couchbase Admin Rest API auth username',
@@ -69,7 +72,7 @@ class CheckCouchbase < Sensu::Plugin::Check::CLI
          short: '-b BUCKET',
          long: '--bucket BUCKET'
 
-  def run
+  def run # rubocop:disable all
     begin
       resource = '/pools/default/buckets'
       response = RestClient::Request.new(
