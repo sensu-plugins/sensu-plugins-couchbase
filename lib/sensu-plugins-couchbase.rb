@@ -1,7 +1,14 @@
+require 'sensu-plugins-couchbase/version'
+
+# Load the defaults
+
 #
-# Set gem version
+# Default class
 #
 module SensuPluginsCouchbase
-  # Gem version
-  VERSION = '0.0.1.alpha.1'
+  class << self
+  end
+
+  class << self
+  end
 end
