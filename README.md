@@ -5,6 +5,8 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-conntrack/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-conntrack)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-conntrack/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-conntrack)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-conntrack.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-conntrack)
+[![Codeship Status for sensu-plugins/sensu-plugins-couchbase](https://codeship.com/projects/3087cc30-d4eb-0132-5af9-16774c8da8c5/status?branch=master)](https://codeship.com/projects/77916)
+
 ## Functionality
 
 ## Files
