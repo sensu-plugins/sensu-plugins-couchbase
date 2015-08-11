@@ -21,3 +21,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ### Changed
 - removed cruft from /lib
+
+## 0.1.0 - 2015-08-11
+
+- add metrics-couchbase.py plugin (requires python requests,DNS modules)
