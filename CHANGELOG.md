@@ -5,14 +5,13 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## Unreleased
 
+## 0.1.0 - 2015-08-11
+### Added
+- add metrics-couchbase.py plugin (requires python requests,DNS modules)
+
 ## [0.0.3] - 2015-07-14
 ### Changed
 - updated sensu-plugin gem to 1.2.0
-
-## 0.0.1 - 2015-05-04
-
-### Added
-- initial release
 
 ## 0.0.2 - 2015-06-02
 
@@ -22,6 +21,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Changed
 - removed cruft from /lib
 
-## 0.1.0 - 2015-08-11
+## 0.0.1 - 2015-05-04
 
-- add metrics-couchbase.py plugin (requires python requests,DNS modules)
+### Added
+- initial release
