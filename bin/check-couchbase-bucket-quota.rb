@@ -72,7 +72,7 @@ class CheckCouchbase < Sensu::Plugin::Check::CLI
          short: '-b BUCKET',
          long: '--bucket BUCKET'
 
-  def run # rubocop:disable all
+  def run
     begin
       resource = '/pools/default/buckets'
       response = RestClient::Request.new(
