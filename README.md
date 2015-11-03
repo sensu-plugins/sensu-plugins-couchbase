@@ -11,6 +11,8 @@
 
 ## Files
  * bin/check-couchbase-bucket-quota.rb
+ * bin/check-couchbase-bucket-replica.rb
+ * bin/check-couchbase-cluster.rb
 
 ## Usage
 
