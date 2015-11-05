@@ -30,7 +30,7 @@
 #
 
 require 'sensu-plugin/check/cli'
-require 'rest_client'
+require 'rest-client'
 require 'json'
 
 #
