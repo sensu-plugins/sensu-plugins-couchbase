@@ -97,14 +97,27 @@ class CheckCouchbase < Sensu::Plugin::Check::CLI
       unknown 'couchbase REST API returned invalid JSON'
     end
 
+    warning_found = false
+    critical_found = false
+
     results.each do |bucket|
       next if config[:bucket] && bucket[:name] != config[:bucket]
 
-      message "Couchbase #{bucket[:name]} bucket quota usage is #{bucket[:basicStats][:quotaPercentUsed]}"
-      critical if bucket[:basicStats][:quotaPercentUsed] > config[:crit]
-      warning if bucket[:basicStats][:quotaPercentUsed] > config[:warn]
+      if bucket[:basicStats][:quotaPercentUsed] > config[:crit]
+        critical_found = true
+        status = 'CRITICAL'
+      elsif bucket[:basicStats][:quotaPercentUsed] > config[:warn]
+        warning_found = true
+        status = 'WARNING'
+      else
+        status = 'OK'
+      end
+
+      output "Couchbase #{bucket[:name]} bucket quota usage is #{bucket[:basicStats][:quotaPercentUsed]}: #{status}"
     end
 
+    critical if critical_found
+    warning if warning_found
     ok
   end
 end
