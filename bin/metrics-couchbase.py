@@ -54,6 +54,7 @@ PER_BUCKET_PER_NODE_STATS = [
     'ep_max_size',
     'ep_mem_high_wat',
     'ep_mem_low_wat',
+    'ep_cache_miss_rate',
     'ep_tmp_oom_errors',
     'ep_queue_size',
     'incr_hits',
