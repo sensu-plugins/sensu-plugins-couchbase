@@ -89,8 +89,6 @@ class CheckCouchbaseCluster < Sensu::Plugin::Check::CLI
       unknown 'couchbase REST API returned invalid JSON'
     end
 
-    critical "Cluster's size is #{results[:nodes].size}, #{config[:cluster_size]} expected" if results[:nodes].size != config[:cluster_size]
-
     if config[:couchbase_version]
       nodes_version = results[:nodes].select { |node| node[:version] != config[:couchbase_version] }
       critical "Unexpected couchbase's version on nodes: #{nodes_version.map { |node| node[:hostname] }}" if nodes_version.size > 0
@@ -105,6 +103,8 @@ class CheckCouchbaseCluster < Sensu::Plugin::Check::CLI
     critical "Cluster #{results[:alerts].size} alert(s)" if results[:alerts].size > 0
 
     warning "Cluster rebalance status #{results[:rebalanceStatus]}" if results[:rebalanceStatus] != 'none'
+
+    critical "Cluster's size is #{results[:nodes].size}, #{config[:cluster_size]} expected" if results[:nodes].size != config[:cluster_size]
 
     ok "Nodes: #{results[:nodes].size}"
   end
