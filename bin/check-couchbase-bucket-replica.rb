@@ -17,6 +17,8 @@
 #   Gem: json
 #
 # USAGE:
+#   check-couchbase-bucket-replica.rb -u admin -P secret -a http://<ip>:8091 -r 3
+#   check-couchbase-bucket-replica.rb -u admin -P secret -a http://<ip>:8091 -b superreplica -r 5
 #
 # NOTES:
 #   This plugin is tested against couchbase 3.0.x

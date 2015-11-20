@@ -17,6 +17,7 @@
 #   Gem: json
 #
 # USAGE:
+#   check-couchbase-cluster.rb -u admin -P secret -a http://<ip>:8091 -c 12
 #
 # NOTES:
 #   This plugin is tested against couchbase 3.0.1
