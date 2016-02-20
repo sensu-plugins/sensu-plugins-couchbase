@@ -1,19 +1,33 @@
 language: ruby
 cache:
-  - bundler
+- bundler
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+- gem build sensu-plugins-couchbase.gemspec
+- gem install sensu-plugins-couchbase-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: E3kw2PPUnj5b0aMjst+4/ctMCSnB1uQE0fFcU8qsj3YaevlN1t2tunMFl58ANX4/cE/KthFQ/rfCYbUTYVURnZ1rfsTaDMamN9bZGmwld7O/0axDEjkC9PQGTfLsoeXSTRnM2erj1s/N9mNHvZgw7l5rhu3GNEsC+jBao60mQCU=
+  gem: sensu-plugins-couchbase
+  on:
+    tags: true
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-couchbase
