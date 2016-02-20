@@ -3,7 +3,7 @@ MethodLength:
   Max: 200
 
 LineLength:
-  Max: 160
+  Max: 175
 
 AbcSize:
   Max: 100

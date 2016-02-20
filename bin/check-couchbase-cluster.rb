@@ -91,16 +91,16 @@ class CheckCouchbaseCluster < Sensu::Plugin::Check::CLI
 
     if config[:couchbase_version]
       nodes_version = results[:nodes].select { |node| node[:version] != config[:couchbase_version] }
-      critical "Unexpected couchbase's version on nodes: #{nodes_version.map { |node| node[:hostname] }}" if nodes_version.size > 0
+      critical "Unexpected couchbase's version on nodes: #{nodes_version.map { |node| node[:hostname] }}" if nodes_version.size > 0 # rubocop:disable ZeroLengthPredicate
     end
 
     nodes_unhealthy = results[:nodes].select { |node| node[:status] != 'healthy' }
-    critical "These nodes are not 'healthy': #{nodes_unhealthy.map { |node| node[:hostname] }}" if nodes_unhealthy.size > 0
+    critical "These nodes are not 'healthy': #{nodes_unhealthy.map { |node| node[:hostname] }}" if nodes_unhealthy.size > 0 # rubocop:disable ZeroLengthPredicate
 
     nodes_unactive = results[:nodes].select { |node| node[:clusterMembership] != 'active' }
-    critical "These nodes are not 'active' in the cluster: #{nodes_unactive.map { |node| node[:hostname] }}" if nodes_unactive.size > 0
+    critical "These nodes are not 'active' in the cluster: #{nodes_unactive.map { |node| node[:hostname] }}" if nodes_unactive.size > 0 # rubocop:disable ZeroLengthPredicate
 
-    critical "Cluster #{results[:alerts].size} alert(s)" if results[:alerts].size > 0
+    critical "Cluster #{results[:alerts].size} alert(s)" if results[:alerts].size > 0 # rubocop:disable ZeroLengthPredicate
 
     warning "Cluster rebalance status #{results[:rebalanceStatus]}" if results[:rebalanceStatus] != 'none'
 
