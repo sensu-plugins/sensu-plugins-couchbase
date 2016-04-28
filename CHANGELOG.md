@@ -5,6 +5,16 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 
+## [1.0.0] - 2016-04-28
+### Added
+- support for Ruby 2.3.0
+
+### Removed
+- support for Ruby 1.9.3 and 2.0
+ 
+### Fixed
+- binstub for python script
+
 ## [0.3.0] - 2015-11-20
 ### Added
 - stub for metrics-couchbase.py
