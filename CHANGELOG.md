@@ -15,7 +15,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Fixed
 - binstub for python script
 
-## [0.3.0] - 2015-11-20
+## [0.3.0] - 2015-11-20 (Pulled)
 ### Added
 - stub for metrics-couchbase.py
 
@@ -52,8 +52,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - initial release
 
-[unreleased]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.3.0...HEAD
-[0.2.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.2.0...0.3.0
+[unreleased]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.3.0...1.0.0
+[0.3.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.1.0...0.2.0
 [0.1.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.0.3...0.1.0
 [0.0.3]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.0.2...0.0.3
