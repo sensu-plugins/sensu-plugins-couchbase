@@ -104,7 +104,7 @@ class CheckCouchbaseCluster < Sensu::Plugin::Check::CLI
 
     warning "Cluster rebalance status #{results[:rebalanceStatus]}" if results[:rebalanceStatus] != 'none'
 
-    critical "Cluster's size is #{results[:nodes].size}, #{config[:cluster_size]} expected" if results[:nodes].size != config[:cluster_size]
+    critical "Cluster's size is #{results[:nodes].size}, #{config[:cluster_size]} expected" if config[:cluster_size] && results[:nodes].size != config[:cluster_size]
 
     ok "Nodes: #{results[:nodes].size}"
   end
