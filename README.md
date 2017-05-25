@@ -13,6 +13,7 @@
  * bin/check-couchbase-bucket-replica.rb
  * bin/check-couchbase-cluster.rb
  * bin/metrics-couchbase.py
+ * bin/metrics-couchbase.rb
 
 ## Usage
 
