@@ -1,11 +1,15 @@
-#Change Log
+# Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
 ### Changed
-- check-couchbase-cluster.rb: make cluster size check optional
+- check-couchbase-cluster.rb: make cluster size check optional (@stuwil)
+- check-couchbase-bucket-quota.rb: Format quota (@obazoud)
+
+### Added
+- Test on Ruby 2.4 (@eheydrick)
 
 ## [1.0.0] - 2016-04-28
 ### Added
