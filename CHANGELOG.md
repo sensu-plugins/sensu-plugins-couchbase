@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+### Changed
+- check-couchbase-cluster.rb: make cluster size check optional
 
 ## [1.0.0] - 2016-04-28
 ### Added
@@ -11,7 +13,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ### Removed
 - support for Ruby 1.9.3 and 2.0
- 
+
 ### Fixed
 - binstub for python script
 
