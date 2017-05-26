@@ -113,7 +113,7 @@ class CheckCouchbase < Sensu::Plugin::Check::CLI
         status = 'OK'
       end
 
-      output "Couchbase #{bucket[:name]} bucket quota usage is #{bucket[:basicStats][:quotaPercentUsed]}: #{status}"
+      output "Couchbase #{bucket[:name]} bucket quota usage is #{'%.3f' % bucket[:basicStats][:quotaPercentUsed]}: #{status}"
     end
 
     critical if critical_found
