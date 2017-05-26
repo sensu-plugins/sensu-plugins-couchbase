@@ -4,9 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+
+## [1.1.0] - 2017-05-25
 ### Changed
 - check-couchbase-cluster.rb: make cluster size check optional (@stuwil)
 - check-couchbase-bucket-quota.rb: Format quota (@obazoud)
+- update to rubocop 0.40 and cleanup (@eheydrick)
 
 ### Added
 - Test on Ruby 2.4 (@eheydrick)
@@ -58,7 +61,8 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Added
 - initial release
 
-[unreleased]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/1.0.0...HEAD
+[unreleased]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.3.0...1.0.0
 [0.3.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/sensu-plugins/sensu-plugins-couchbase/compare/0.1.0...0.2.0
